@@ -149,3 +149,16 @@ h5 {
 /* Color Assignments */
 /* Colors, taken from UX Design File*/
 /* Escapes */
+nav {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+nav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: medium;
+  color: #339EF9;
+  padding: 1rem;
+}
