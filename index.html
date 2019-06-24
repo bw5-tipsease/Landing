@@ -2,19 +2,64 @@
 
 <head>
     <title>Tipease</title>
+
     <!-- META TAG -->
     <meta name='viewport' content='width=device=width, initial-scale=1'>
-    <!-- What else do I need here? CSS link, what else-->
+
+    <!-- Roboto Font Import ' font-family: 'Roboto', sans-serif; '-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+
+    <!-- Linking the HTML Page to the Meta Tag -->
+    <link rel="stylesheet" href="css/index.css">
+
 </head>
 <body>
+    
     <heaader>
+        <section class='banner'>
 
+            <!-- Nav -->
+            <div class='nav-wrap'>
+                <nav>
+                    <a href='#'>About</a>
+                    <a href='#'>Tipease</a>
+                    <a href='#'>Sign In</a>
+                </nav>
+            </div>
+
+            <!-- Intro Text -->
+            <article class='feature' id='intro'>
+                <h1>Tipease</h1>
+                <p>The most transparent way to tip.</p>
+            </article>
+
+            <!-- Banner SVG -->
+            <img class='banner-img' src='assets/pay.svg' alt='Tip easily and directly with your phone'>
+
+            <!-- CTA White Button -->
+            <button class='cta white'>Sign Up</button>
+        </section>
     </header>
-    <section class='banner'>
 
-    </section>
+
+
+    <!-- Feature's articles -->
     <section class='features'>
+        <article class='feature'>
+            <h2>Transparent</h2>
+            <p>No more wondering if a tip is split or not. Tipease explains exactly where your money is going.</p>
+        </article>
+        <article class='feature'>
+                <h2>Instant</h2>
+                <p>Once you send your tip the receiving party has it in their account immediately. No more waiting until payday.</p>
+            </article>
+            <article class='feature'>
+                <h2>Zero Fees</h2>
+                <p>Yes, no fees! We will never charge anyone a fee who uses Tipease.</p>
+            </article>
 
+            <!-- CTA Blue Button -->
+            <button class='cta blue'>Sign Up</button>
     </section>
 </body>
 
