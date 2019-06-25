@@ -169,9 +169,12 @@ nav a {
 .nav-wrapper {
   padding-bottom: 2.4rem;
 }
+article {
+  margin-left: 12.5%;
+}
 article p {
   color: #4E4E4E;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 article h1 {
   font-size: 2.1rem;
@@ -188,12 +191,44 @@ article h5 {
   color: #339EF9;
   margin-bottom: 0.1rem;
 }
+.intro {
+  margin-bottom: 1.1rem;
+}
 .intro p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  width: 83%;
+}
+.feature {
+  width: 75%;
 }
 .feature p {
-  padding-bottom: 1.4rem;
+  padding-bottom: 1.1rem;
 }
 .feature h2 {
-  padding-bottom: 1.1rem;
+  padding-bottom: 1rem;
+}
+.banner-img {
+  max-width: 115%;
+  margin-left: -10%;
+}
+button {
+  font-size: 1rem;
+  font-weight: semi-bold;
+  text-align: center;
+  border-radius: 50%;
+  width: 143px;
+  height: 143px;
+  padding: 1.3rem 0;
+  border: 1px solid transparent;
+  align-self: center;
+  justify-self: center;
+  position: relative;
+}
+.white {
+  background: white;
+  filter: drop-shadow(0 2px 0.1rem #f7f7f7);
+}
+.blue {
+  background: linear-gradient(136deg, #6BD6FA, #3A7AE7);
+  filter: drop-shadow(0 2px 0.1rem #f7f7f7);
 }
