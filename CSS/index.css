@@ -145,8 +145,11 @@ h5 {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
   margin-bottom: 15px;
+  color: #339EF9;
 }
 /* Color Assignments */
+/* It seems like these should be assigned last, once I see how every color
+ is related to each object*/
 /* Colors, taken from UX Design File*/
 /* Escapes */
 nav {
@@ -154,11 +157,43 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  box-shadow: 0 0.1rem 0.1rem #f7f7f7;
 }
 nav a {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: medium;
   color: #339EF9;
-  padding: 1rem;
+  padding: 0.6rem 1.2rem;
+}
+.nav-wrapper {
+  padding-bottom: 2.4rem;
+}
+article p {
+  color: #4E4E4E;
+  font-size: 1.1rem;
+}
+article h1 {
+  font-size: 2.1rem;
+}
+article h2 {
+  font-size: 1.4rem;
+}
+article h1,
+article h2,
+article h3,
+article h4,
+article h5 {
+  font-weight: 550;
+  color: #339EF9;
+  margin-bottom: 0.1rem;
+}
+.intro p {
+  font-size: 1.4rem;
+}
+.feature p {
+  padding-bottom: 1.4rem;
+}
+.feature h2 {
+  padding-bottom: 1.1rem;
 }
