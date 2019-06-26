@@ -1,4 +1,24 @@
+.banner-wrapper{
+    max-width: 100%;
+    overflow: hidden;
+    text-indent: -10%;
+}
+
 .banner-img{
     max-width: 115%;
-    margin-left: -10%;
 }
+
+
+@media(min-width: 600px) {
+    .banner-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Not the smoothest transition but now the image will stay center 
+once it passes pay.svg's width. Now all I want is to maintain the image's cropping
+past 600px, which I think would require a wrapper outside of banner-wrapper, which to 
+me just seems sloppy.
+
+Need to let go of this and move on to the desktop width */

@@ -147,6 +147,9 @@ h5 {
   margin-bottom: 15px;
   color: #339EF9;
 }
+button {
+  font-family: 'Roboto', sans-serif;
+}
 /* Color Assignments */
 /* It seems like these should be assigned last, once I see how every color
  is related to each object*/
@@ -207,12 +210,32 @@ article h5 {
 .feature h2 {
   padding-bottom: 1rem;
 }
+.banner-wrapper {
+  max-width: 100%;
+  overflow: hidden;
+  text-indent: -10%;
+}
 .banner-img {
   max-width: 115%;
-  margin-left: -10%;
+}
+@media (min-width: 600px) {
+  .banner-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* Not the smoothest transition but now the image will stay center 
+once it passes pay.svg's width. Now all I want is to maintain the image's cropping
+past 600px, which I think would require a wrapper outside of banner-wrapper, which to 
+me just seems sloppy.
+
+Need to let go of this and move on to the desktop width */
+.cta-wrapper {
+  display: flex;
+  justify-content: center;
 }
 button {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: semi-bold;
   text-align: center;
   border-radius: 50%;
@@ -220,15 +243,13 @@ button {
   height: 143px;
   padding: 1.3rem 0;
   border: 1px solid transparent;
-  align-self: center;
-  justify-self: center;
-  position: relative;
+  box-shadow: 0 0.3rem 0.3rem #f7f7f7;
 }
 .white {
   background: white;
-  filter: drop-shadow(0 2px 0.1rem #f7f7f7);
+  color: #339EF9;
 }
 .blue {
   background: linear-gradient(136deg, #6BD6FA, #3A7AE7);
-  filter: drop-shadow(0 2px 0.1rem #f7f7f7);
+  color: white;
 }
