@@ -161,6 +161,7 @@ nav {
   justify-content: space-between;
   width: 100%;
   box-shadow: 0 0.1rem 0.1rem #f7f7f7;
+  background: white;
 }
 nav a {
   text-decoration: none;
@@ -171,6 +172,9 @@ nav a {
 }
 .nav-wrapper {
   padding-bottom: 2.4rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 article {
   margin-left: 12.5%;
@@ -244,12 +248,20 @@ button {
   padding: 1.3rem 0;
   border: 1px solid transparent;
   box-shadow: 0 0.3rem 0.3rem #f7f7f7;
+  padding-bottom: 0.5rem;
+  align-self: center;
+  justify-self: center;
+  position: relative;
 }
 .white {
   background: white;
   color: #339EF9;
+  bottom: 2rem;
 }
 .blue {
   background: linear-gradient(136deg, #6BD6FA, #3A7AE7);
   color: white;
+  position: static;
+  margin-bottom: 3rem;
+  margin-top: 2.5rem;
 }
