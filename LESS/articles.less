@@ -20,7 +20,6 @@ article{
         color: @primary-blue;
         margin-bottom: 0.1rem;
     }
-
 }
 
 .intro{ 
@@ -40,5 +39,29 @@ article{
     }
     h2{
         padding-bottom: 1rem;
+    }
+}
+
+@media@desktop{
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width:1024px;
+        margin: auto;
+    }
+
+    .intro{
+        p{
+            font-size: 2.5rem;
+            color: white;
+        }
+
+        h1{
+            font-size: 5.5rem;
+            font-weight: bold;
+            color: white;
+        }
+
     }
 }

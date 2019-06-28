@@ -12,12 +12,18 @@
     <!-- Linking the HTML Page to the stylesheet -->
     <link rel="stylesheet" href="css/index.css">
 
+    <!-- to remove common Firefox Dev-tool Error-->
+    <meta charset="utf-8"/>
+
 </head>
 <body>
     
     <heaader>
         <section class='banner'>
-
+            <!-- Blue SVG-->
+            <div id='blueSvgWrapper'>
+                <img class='banner-img' id='blueSvg' src='assets/blue.svg'>
+            </div>
             <!-- Nav -->
             <div class='nav-wrapper'>
                 <nav>
@@ -26,16 +32,14 @@
                     <a href='#'>Sign In</a>
                 </nav>
             </div>
-
             <!-- Intro Text -->
             <article class='intro'>
                 <h1>Tipease</h1>
                 <p>The most transparent way to tip</p>
             </article>
-
-            <!-- Banner SVG -->
-            <div class='banner-wrapper'>
-                <img class='banner-img' src='assets/pay.svg' alt='Tip easily and directly with your phone'>
+            <!-- Pay SVG -->
+            <div id='paySvgWrapper'>
+                <img class='banner-img' id='paySvg' src='assets/pay.svg' alt='Tip easily and directly with your phone'>
             </div>
             <!-- CTA White Button -->
             <div class='cta-wrapper'>

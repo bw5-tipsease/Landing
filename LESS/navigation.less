@@ -3,7 +3,8 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    box-shadow: 0 .1rem .1rem @secondary-grey;
+    max-width: 1024px;
+    //box-shadow: 0 .1rem .1rem @secondary-grey;
     background: white;
 
     a{
@@ -20,4 +21,43 @@ nav{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+}
+
+@media @desktop{
+
+    .banner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-wrapper{
+        padding-bottom: 5rem;
+        width: 1024px;
+        margin: auto;
+        z-index: 1;
+        position: static;
+        border: solid red 2px;
+        background-color: transparent;
+        
+    }
+
+    nav{
+        max-width: 1024px;
+        background-color: transparent;
+        
+        :nth-child(1){
+            color:white;
+        }
+
+        :nth-child(2){
+            color:white;
+        }
+
+        a{
+            font-size: 2rem;
+            padding: 1rem;
+        }
+    }
 }

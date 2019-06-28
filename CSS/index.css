@@ -160,7 +160,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  box-shadow: 0 0.1rem 0.1rem #f7f7f7;
+  max-width: 1024px;
   background: white;
 }
 nav a {
@@ -175,6 +175,37 @@ nav a {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+}
+@media (min-width: 1000px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .nav-wrapper {
+    padding-bottom: 5rem;
+    width: 1024px;
+    margin: auto;
+    z-index: 1;
+    position: static;
+    border: solid red 2px;
+    background-color: transparent;
+  }
+  nav {
+    max-width: 1024px;
+    background-color: transparent;
+  }
+  nav :nth-child(1) {
+    color: white;
+  }
+  nav :nth-child(2) {
+    color: white;
+  }
+  nav a {
+    font-size: 2rem;
+    padding: 1rem;
+  }
 }
 article {
   margin-left: 12.5%;
@@ -214,26 +245,60 @@ article h5 {
 .feature h2 {
   padding-bottom: 1rem;
 }
-.banner-wrapper {
+@media (min-width: 1000px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1024px;
+    margin: auto;
+  }
+  .intro p {
+    font-size: 2.5rem;
+    color: white;
+  }
+  .intro h1 {
+    font-size: 5.5rem;
+    font-weight: bold;
+    color: white;
+  }
+}
+#paySvgWrapper {
   max-width: 100%;
   overflow: hidden;
   text-indent: -10%;
 }
-.banner-img {
+#paySvg {
   max-width: 115%;
 }
+#blueSvg {
+  display: none;
+}
 @media (min-width: 600px) {
-  .banner-wrapper {
+  #paySvgWrapper {
     display: flex;
     justify-content: center;
   }
 }
-/* Not the smoothest transition but now the image will stay center 
-once it passes pay.svg's width. Now all I want is to maintain the image's cropping
-past 600px, which I think would require a wrapper outside of banner-wrapper, which to 
-me just seems sloppy.
-
-Need to let go of this and move on to the desktop width */
+@media (min-width: 1000px) {
+  #blueSvgWrapper {
+    position: absolute;
+    z-index: -1;
+    top: 0rem;
+  }
+  #blueSvg {
+    display: inline;
+  }
+  #paySvgWrapper {
+    justify-content: end;
+    height: 450px;
+  }
+  #paySvg {
+    position: absolute;
+    top: 7rem;
+    z-index: -2;
+  }
+}
 .cta-wrapper {
   display: flex;
   justify-content: center;
