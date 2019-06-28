@@ -51,5 +51,5 @@ function isMobile(width){
     }
 }
 
-mqDesktop.addListener(isDesktop);
-mqMobile.addListener(isMobile);
+window.onload = mqDesktop.addListener(isDesktop);
+window.onload = mqMobile.addListener(isMobile);

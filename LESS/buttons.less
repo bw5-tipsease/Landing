@@ -8,28 +8,41 @@ button{
     font-weight: semi-bold;
     text-align: center;
     border-radius: 50%;
-    width: 143px;
-    height: 143px;
+    width: 146px;
+    height: 146px;
     padding: 1.3rem 0;
     border: 1px solid transparent;
-    box-shadow: 0 .3rem .3rem @secondary-grey;
     padding-bottom: .5rem;
     // THANK YOU TREVOR for code below - white cta button is where it belongs now
     align-self: center;
     justify-self: center;
     position: relative;
+
+    @media @desktop{
+    width: 180px;
+    height: 180px;
+    margin: 5rem 0;
+    }
+
+}
+
+.top{
+    bottom: 2rem;
 }
 
 .white{
     background: white;
     color: @primary-blue;
-    bottom: 2rem;
+    box-shadow: 0 .4rem .4rem @secondary-grey;
+}
+
+.bottom{
+    position: static;
+    margin-bottom: 3rem;
 }
 
 .blue{
     background: @teal-to-blue-gradient;
     color: white;
-    position: static;
-    margin-bottom: 3rem;
-    margin-top: 2.5rem;
+    box-shadow: 0 .1rem .1rem @secondary-blue;
 }

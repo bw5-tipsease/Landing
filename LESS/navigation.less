@@ -3,16 +3,16 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    max-width: 1024px;
-    //box-shadow: 0 .1rem .1rem @secondary-grey;
+    max-width: 1000px;
+    box-shadow: 0 .1rem .1rem @secondary-grey;
     background: white;
 
     a{
         text-decoration: none;
-        font-size: 1.2rem;
-        font-weight: medium;
+        font-size: 1.6rem;
+        font-weight: 500;
         color: @primary-blue;
-        padding: .6rem 1.2rem;
+        padding: 1.2rem;
     }
 }
 
@@ -21,6 +21,10 @@ nav{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+}
+
+footer .nav-wrapper{
+    display: none;
 }
 
 @media @desktop{
@@ -38,7 +42,6 @@ nav{
         margin: auto;
         z-index: 1;
         position: static;
-        border: solid red 2px;
         background-color: transparent;
         
     }
@@ -46,7 +49,8 @@ nav{
     nav{
         max-width: 1024px;
         background-color: transparent;
-        
+        box-shadow: none;
+
         :nth-child(1){
             color:white;
         }
@@ -57,7 +61,23 @@ nav{
 
         a{
             font-size: 2rem;
-            padding: 1rem;
+            padding: 2rem;
+        }
+    }
+
+    footer .nav-wrapper{
+        display: inline;
+        padding: 5rem 0 0 0;
+    }
+
+    footer nav{
+
+        :nth-child(1){
+            color: @primary-blue;
+        }
+
+        :nth-child(2){
+            color: @primary-blue;
         }
     }
 }
