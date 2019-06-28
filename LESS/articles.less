@@ -1,18 +1,21 @@
 article{
 
     margin-left: 12.5%;
+    margin-bottom: 2.8rem;
 
     p{
         color: @secondary-text-color;
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     h1{
-        font-size: 2.1rem;
+        font-size: 2.8rem;
+        font-weight: 600;
     }
 
     h2{
-        font-size: 1.4rem;
+        font-size: 1.8rem;
+        font-weight: 00;
     }
 
     h1, h2, h3, h4, h5{
@@ -20,16 +23,19 @@ article{
         color: @primary-blue;
         margin-bottom: 0.1rem;
     }
-
 }
 
 .intro{ 
 
     margin-bottom: 1.1rem;
     p{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         width: 83%;
     }
+}
+
+.features-column h1{
+    display: none;
 }
 
 .feature{
@@ -40,5 +46,62 @@ article{
     }
     h2{
         padding-bottom: 1rem;
+    }
+}
+
+@media@desktop{
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width:1024px;
+        margin: auto;
+    }
+
+    .intro{
+        p{
+            font-size: 2.5rem;
+            color: white;
+        }
+
+        h1{
+            font-size: 5.5rem;
+            font-weight: bold;
+            color: white;
+        }
+
+    }
+
+    .features-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: @secondary-grey;
+    }
+
+    .features-column{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1{
+            font-size: 3rem;
+        }
+    }
+
+    .feature{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0 1rem;
+        margin-left: 1rem;
+
+        h2{
+            padding: 1rem 0;
+        }
+
+        p{
+            padding: 1rem 0;
+        }
     }
 }
