@@ -262,6 +262,32 @@ article h5 {
     font-weight: bold;
     color: white;
   }
+  .features-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .features-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .features-column h1 {
+    font-size: 3rem;
+  }
+  .feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 1rem;
+    margin-left: 1rem;
+  }
+  .feature h2 {
+    padding: 1rem 0;
+  }
+  .feature p {
+    padding: 1rem 0;
+  }
 }
 #paySvgWrapper {
   max-width: 100%;
@@ -272,6 +298,9 @@ article h5 {
   max-width: 115%;
 }
 #blueSvg {
+  display: none;
+}
+#iphoneSvgWrapper {
   display: none;
 }
 @media (min-width: 600px) {
@@ -297,6 +326,10 @@ article h5 {
     position: absolute;
     top: 7rem;
     z-index: -2;
+  }
+  #iphoneSvgWrapper {
+    display: flex;
+    margin-left: 12.5%;
   }
 }
 .cta-wrapper {
